@@ -1,3 +1,9 @@
 pypandoc 
 Flask 
 docxtpl
+Flask-Migrate
+Flask-RESTful
+Flask-Script
+Flask-SQLAlchemy
+PyJWT
+SQLAlchemy
