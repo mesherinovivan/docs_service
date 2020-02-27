@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      args:
+        proxy: "http://10.27.11.31:3128"
+        sproxy: "http://10.27.11.31:3128"
+        noproxy: "localhost,127.0.0.1"
+    command: python app.py
+    env_file:
+      - ./.env.dev
+
+    volumes:
+      - .:/api
+    ports:
+      - 5000:5000
